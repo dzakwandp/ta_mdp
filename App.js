@@ -1,5 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
+import {createStackNavigator} from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
@@ -8,7 +9,6 @@ import HomeScreen from './HomeScreen'
 import ProfileScreen from './ProfileScreen'
 
 const Tab = createBottomTabNavigator();
-
 
 export default function App() {
   return (
