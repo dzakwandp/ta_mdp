@@ -1,15 +1,19 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import {createStackNavigator} from '@react-navigation/stack'
 
-export default function HomeScreen({navigation}) {
-    return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
-        <Button 
-        title="Go to Profile"
-        onPress={()=> navigation.navigate('Profile')}
-        />
-    </View>
+//import komponen yang akan dimasukan kedalam Stack Navigator
+import DetailScreen from './DetailScreen'
+import ClubListScreen from './ClubListScreen'
+
+//HomeScreen.js berfungsi hanya sebagai penghubung Stack Navigator
+const Stack = createStackNavigator();
+export default function HomeScreen() {
+    return ( 
+        //Ketika Tombol Home di klik Default nya akan menampilkan Halaman List karena HomeScreen.js tidak punya tampilan , jadi merender ClubListScreen.js
+        <Stack.Navigator initialRouteName="List">
+          <Stack.Screen name ="Detail" component={DetailScreen}/>
+          <Stack.Screen name ="List" component={ClubListScreen}/>
+        </Stack.Navigator>
     )
 }
