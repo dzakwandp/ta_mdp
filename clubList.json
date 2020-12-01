@@ -2,102 +2,122 @@
     "name": "Premier League 2020/21",
     "clubs": [
       {
+        "id" : 1,
         "name": "Burnley FC",
         "code": "BUR",
         "country": "England"
       },
       {
+        "id" : 2,
         "name": "Manchester United FC",
         "code": "MUN",
         "country": "England"
       },
       {
+        "id" : 3,
         "name": "Manchester City FC",
         "code": "MCI",
         "country": "England"
       },
       {
+        "id" : 4,
         "name": "Aston Villa FC",
         "code": "AVL",
         "country": "England"
       },
       {
+        "id" : 5,
         "name": "Fulham FC",
         "code": "FUL",
         "country": "England"
       },
       {
+        "id" : 6,
         "name": "Arsenal FC",
         "code": "ARS",
         "country": "England"
       },
       {
+        "id" : 7,
         "name": "Crystal Palace FC",
         "code": "CRY",
         "country": "England"
       },
       {
+        "id" : 8,
         "name": "Southampton FC",
         "code": "SOU",
         "country": "England"
       },
       {
+        "id" : 9,
         "name": "Liverpool FC",
         "code": "LIV",
         "country": "England",
         "picture": "https://seeklogo.com/images/L/liverpool-fc-logo-2CA2557160-seeklogo.com.jpg"
       },
       {
+        "id" : 10,
         "name": "Leeds United FC",
         "code": "LEE",
         "country": "England"
       },
       {
+        "id" : 11,
         "name": "West Ham United FC",
         "code": "WHU",
         "country": "England"
       },
       {
+        "id" : 12,
         "name": "Newcastle United FC",
         "code": "NEW",
         "country": "England"
       },
       {
+        "id" : 13,
         "name": "West Bromwich Albion FC",
         "code": "WBA",
         "country": "England"
       },
       {
+        "id" : 14,
         "name": "Leicester City FC",
         "code": "LEI",
         "country": "England"
       },
       {
+        "id" : 15,
         "name": "Tottenham Hotspur FC",
         "code": "TOT",
         "country": "England"
       },
       {
+        "id" : 16,
         "name": "Everton FC",
         "code": "EVE",
         "country": "England"
       },
       {
+        "id" : 17,
         "name": "Sheffield United FC",
         "code": "SHU",
         "country": "England"
       },
       {
+        "id" : 18,
         "name": "Wolverhampton Wanderers FC",
         "code": "WOL",
         "country": "England"
       },
       {
+        "id" : 19,
         "name": "Brighton & Hove Albion FC",
         "code": "BHA",
         "country": "England"
       },
       {
+        "id" : 20,
         "name": "Chelsea FC",
         "code": "CHE",
         "country": "England"

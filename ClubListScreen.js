@@ -9,17 +9,23 @@ import {
   Text,
 } from 'react-native';
 import Styles from './ClubListStyle';
+
+//inisiasi file .json yang berisi daftar klub liga inggris
 const clubData = require('./clubList.json')
+
+//karena file clubList.json isinya adalah object , didalam clubs berisi array , maka diinisiasi dahulu.
 const clubArray = clubData.clubs
 
 export default function ClubListScreen({navigation}) {
-    const onPressCardView = () => {
+    const onPressCardView = (id) => {
         ToastAndroid.showWithGravity(
-          "test",
+          "Hi",
           ToastAndroid.SHORT,
           ToastAndroid.BOTTOM,
         );
-        navigation.navigate('Detail');
+        navigation.navigate('Detail',{
+            id : id,
+        });
       };
     
       return (
@@ -31,9 +37,9 @@ export default function ClubListScreen({navigation}) {
             <View style={Styles.scrollView}>
               {clubArray.map(item => (
                 <TouchableOpacity
-                  key={item.code}
+                  key={item.id}
                   style={Styles.cardView}
-                  onPress={() => onPressCardView()}>
+                  onPress={() => onPressCardView(item.id)}>
                   <View style={Styles.cardView1}>
                     <Image source={{uri: item.picture}} style={Styles.image} />
                   </View>
