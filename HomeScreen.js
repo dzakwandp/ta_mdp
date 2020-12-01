@@ -13,7 +13,7 @@ export default function HomeScreen() {
         //Ketika Tombol Home di klik Default nya akan menampilkan Halaman List karena HomeScreen.js tidak punya tampilan , jadi merender ClubListScreen.js
         <Stack.Navigator initialRouteName="List">
           <Stack.Screen name ="Detail" component={DetailScreen}/>
-          <Stack.Screen name ="List" component={ClubListScreen}/>
+          <Stack.Screen name ="List" component={ClubListScreen} options={{headerShown: false}}/>
         </Stack.Navigator>
     )
 }
