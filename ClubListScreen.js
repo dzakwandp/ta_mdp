@@ -9,39 +9,42 @@ import {
   Text,
 } from 'react-native';
 import Styles from './ClubListStyle';
+const clubData = require('./ClubList.json')
+const clubArray = clubData.clubs
 
 export default function ClubListScreen({navigation}) {
-    const onPressCardView = () => {
+    const onPressCardView = (id) => {
         ToastAndroid.showWithGravity(
-          item.first_name,
+          "Success",
           ToastAndroid.SHORT,
           ToastAndroid.BOTTOM,
         );
-        navigation.navigate('Detail Page');
+        navigation.navigate('Detail',{
+            id: id,
+        });
       };
     
       return (
         <SafeAreaView style={Styles.container}>
           <ScrollView>
             <View style={Styles.titleContainer}>
-              <Text style={Styles.title}>CLUB LIST</Text>
+              <Text style={Styles.title}>{clubData.name}</Text>
             </View>
             <View style={Styles.scrollView}>
-              {/* {userData.map(item => ( */}
+              {clubArray.map(item => (
                 <TouchableOpacity
-                //   key={item.id}
+                  key={item.id}
                   style={Styles.cardView}
-                  onPress={() => onPressCardView()}>
+                  onPress={() => onPressCardView(item.id)}>
                   <View style={Styles.cardView1}>
-                    {/* <Image source={{uri: item.avatar}} style={Styles.image} /> */}
+                    <Image source={{uri: item.picture}} style={Styles.image} />
                   </View>
                   <View style={Styles.cardView2}>
-                      <Text>Ini Card View</Text>
-                    {/* <Text style={Styles.text1}>{`${item.first_name}`}</Text>
-                    <Text style={Styles.text2}>{`${item.last_name}`}</Text> */}
+                    <Text style={Styles.text1}>{`${item.name}`}</Text>
+                    <Text style={Styles.text2}>{`${item.nick}`}</Text>
                   </View>
                 </TouchableOpacity>
-              {/* ))} */}
+              ))}
             </View>
           </ScrollView>
         </SafeAreaView>

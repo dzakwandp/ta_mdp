@@ -15,16 +15,9 @@ export default function ProfileScreen({navigation}) {
         <Image style={styles.avatar} source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
         <View style={styles.body}>
           <View style={styles.bodyContent}>
-            <Text style={styles.name}>John Doe</Text>
-            <Text style={styles.info}>UX Designer / Mobile developer</Text>
+            <Text style={styles.name}>Dzakwan Diego</Text>
+            <Text style={styles.info}>Premier League Supporters</Text>
             <Text style={styles.description}>Lorem ipsum dolor sit amet, saepe sapientem eu nam. Qui ne assum electram expetendis, omittam deseruisse consequuntur ius an,</Text>
-            
-            <TouchableOpacity style={styles.buttonContainer}>
-              <Text>Opcion 1</Text>  
-            </TouchableOpacity>              
-            <TouchableOpacity style={styles.buttonContainer}>
-              <Text>Opcion 2</Text> 
-            </TouchableOpacity>
           </View>
       </View>
     </View>
@@ -33,11 +26,11 @@ export default function ProfileScreen({navigation}) {
 
 const styles = StyleSheet.create({
     header:{
-      backgroundColor: "#00BFFF",
+      backgroundColor: "#e90052",
       height:200,
     },
     prebody:{
-        backgroundColor: "green",
+        backgroundColor: "#38003c",
         height:80,
       },
     avatar: {
